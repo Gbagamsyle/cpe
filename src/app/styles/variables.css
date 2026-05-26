@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css');
+ 
+:root {
+  --navy: #0a1628;
+  --navy-mid: #152444;
+  --gold: #c9922a;
+  --gold-light: #e8b84b;
+  --cream: #f5f0e8;
+  --white: #ffffff;
+  --text-dark: #1a1a2e;
+  --text-muted: #6b7280;
+  --border: rgba(201,146,42,0.2);
+  --ff-display: 'Playfair Display', Georgia, serif;
+  --ff-body: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: var(--ff-body);
+  background: var(--cream);
+  color: var(--text-dark);
+  font-size: 15px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* keep sections hidden by default; components toggle .active */
+section { display: none; }
+section.active { display: block; }
