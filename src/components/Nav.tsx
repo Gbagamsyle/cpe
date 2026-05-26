@@ -1,10 +1,27 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import "./Nav.css";
 
+const links = [
+  ["home", "Home"],
+  ["about", "About"],
+  ["programs", "Programs"],
+  ["academics", "Academics"],
+  ["faculty", "Faculty"],
+  ["news", "News & Events"],
+  ["contact", "Contact"],
+];
+
 export default function Nav({ active, onNavigate }: { active: string; onNavigate: (id: string) => void; }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleNavigate = (id: string) => {
+    setMenuOpen(false);
+    onNavigate(id);
+  };
+
   return (
     <nav>
       <div className="nav-brand">
@@ -17,23 +34,24 @@ export default function Nav({ active, onNavigate }: { active: string; onNavigate
         </div>
       </div>
 
-      <ul className="nav-links">
-        {[
-          ["home", "Home"],
-          ["about", "About"],
-          ["programs", "Programs"],
-          ["academics", "Academics"],
-          ["faculty", "Faculty"],
-          ["news", "News & Events"],
-          ["contact", "Contact"]
-        ].map(([id, label]) => (
+      <button
+        className={`nav-toggle ${menuOpen ? "open" : ""}`}
+        aria-expanded={menuOpen}
+        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+        onClick={() => setMenuOpen((prev) => !prev)}
+      >
+        <span />
+      </button>
+
+      <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+        {links.map(([id, label]) => (
           <li key={id}>
             <a
               href="#"
               className={active === id ? "active" : ""}
               onClick={(e) => {
                 e.preventDefault();
-                onNavigate(id as string);
+                handleNavigate(id);
               }}
             >
               {label}
