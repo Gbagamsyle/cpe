@@ -46,7 +46,7 @@
   background: rgba(201,146,42,0.15);
   border: 1px solid rgba(201,146,42,0.3);
   color: var(--gold-light);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -72,7 +72,7 @@
 
 .hero p {
   color: rgba(255,255,255,0.85);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   max-width: 560px;
@@ -124,23 +124,23 @@
 .stat-item:last-child { border-right: none; }
 
 .stat-number { font-family: var(--ff-display); font-size: 26px; font-weight: 700; color: var(--gold-light); display: block; }
-.stat-label { font-size: 11px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 400; }
+.stat-label { font-size: 12px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 400; }
 
 .page-content { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
 
-.section-eyebrow { font-size: 11px; font-weight: 500; color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+.section-eyebrow { font-size: 12px; font-weight: 500; color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
 
 .section-title { font-family: var(--ff-display); font-size: 28px; font-weight: 700; color: var(--navy); margin-bottom: 1rem; line-height: 1.2; }
 
-.section-lead { color: var(--text-muted); font-size: 15px; max-width: 600px; margin-bottom: 2.5rem; line-height: 1.7; font-weight: 300; }
+.section-lead { color: var(--text-muted); font-size: 16px; max-width: 600px; margin-bottom: 2.5rem; line-height: 1.7; font-weight: 300; }
 
 .highlight-strip { background: var(--navy); border-left: 4px solid var(--gold); padding: 1.5rem; border-radius: 0 8px 8px 0; margin: 2rem 0; color: rgba(255,255,255,0.8); font-size: 14px; line-height: 1.7; font-style: italic; }
 
 .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2.5rem 0; }
 .pillar-card { background: var(--white); border: 1px solid rgba(0,0,0,0.07); border-radius: 10px; padding: 1.5rem; }
-.pillar-icon { width: 40px; height: 40px; background: rgba(201,146,42,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; color: var(--gold); font-size: 18px; }
-.pillar-card h3 { font-size: 14px; font-weight: 500; color: var(--navy); margin-bottom: 0.5rem; }
-.pillar-card p { font-size: 12px; color: var(--text-muted); line-height: 1.6; font-weight: 300; }
+  .pillar-icon { width: 40px; height: 40px; background: rgba(201,146,42,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; color: var(--gold); font-size: 19px; }
+  .pillar-card h3 { font-size: 15px; font-weight: 500; color: var(--navy); margin-bottom: 0.5rem; }
+  .pillar-card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; font-weight: 300; }
 
 .hero-visual { display: block; position: relative; z-index: 1; justify-self: end; max-width: 360px; }
 .hero-visual img, .hero-visual svg { display: block; max-width: 100%; height: auto; opacity: 0.95; }
@@ -198,7 +198,7 @@
 @media (max-width: 680px) {
   .hero { padding: 1.5rem 0.75rem; min-height: 320px; }
   .hero-bg { opacity: 0.02; }
-  .hero-eyebrow { font-size: 9px; padding: 3px 8px; margin-bottom: 0.75rem; gap: 6px; }
+  .hero-eyebrow { font-size: 10px; padding: 3px 8px; margin-bottom: 0.75rem; gap: 6px; }
   .hero h1 { font-size: 28px; line-height: 1.08; margin-bottom: 0.5rem; }
   .hero p { font-size: 12px; margin-bottom: 0.875rem; }
   .hero-actions { gap: 8px; }
@@ -209,54 +209,60 @@
   .stat-item:nth-child(odd) { border-right: 1px solid rgba(201,146,42,0.12); }
   .stat-item:nth-child(3), .stat-item:nth-child(4) { border-bottom: none; }
   .stat-number { font-size: 18px; }
-  .stat-label { font-size: 9px; }
+  .stat-label { font-size: 10px; }
   .page-content { padding: 1.5rem 0.75rem; }
-  .section-eyebrow { font-size: 10px; margin-bottom: 0.5rem; }
+  .section-eyebrow { font-size: 11px; margin-bottom: 0.5rem; }
   .section-title { font-size: 20px; }
-  .section-lead { font-size: 12px; margin-bottom: 1.5rem; }
+  .section-lead { font-size: 13px; margin-bottom: 1.5rem; }
   .pillars-grid { gap: 0.875rem; margin: 1.5rem 0; }
   .pillar-card { padding: 1rem; }
   .pillar-icon { width: 32px; height: 32px; font-size: 14px; margin-bottom: 0.75rem; }
-  .pillar-card h3 { font-size: 12px; margin-bottom: 0.375rem; }
-  .pillar-card p { font-size: 11px; line-height: 1.5; }
+  .pillar-card h3 { font-size: 13px; margin-bottom: 0.375rem; }
+  .pillar-card p { font-size: 12px; line-height: 1.5; }
   .highlight-strip { padding: 1rem; margin: 1.25rem 0; font-size: 12px; }
 }
 
 @media (max-width: 520px) {
   .hero { padding: 1.25rem 0.5rem; min-height: 300px; }
-  .hero-eyebrow { font-size: 8px; padding: 2px 6px; gap: 4px; }
+  .hero-eyebrow { font-size: 10px; padding: 2px 6px; gap: 4px; }
   .hero h1 { font-size: 24px; line-height: 1.06; margin-bottom: 0.375rem; }
-  .hero p { font-size: 11px; margin-bottom: 0.75rem; line-height: 1.4; }
+  .hero p { font-size: 12px; margin-bottom: 0.75rem; line-height: 1.4; }
   .hero-actions { flex-direction: column; }
   .btn-primary, .btn-outline { width: 100%; padding: 10px 16px; font-size: 12px; }
   .stat-item { padding: 0.625rem 0.875rem; }
   .stat-number { font-size: 16px; }
-  .stat-label { font-size: 8px; letter-spacing: 0.04em; }
+  .stat-label { font-size: 10px; letter-spacing: 0.04em; }
   .page-content { padding: 1.25rem 0.5rem; }
-  .section-eyebrow { font-size: 9px; }
+  .section-eyebrow { font-size: 10px; }
   .section-title { font-size: 18px; margin-bottom: 0.5rem; }
-  .section-lead { font-size: 11px; margin-bottom: 1.25rem; max-width: 100%; }
+  .section-lead { font-size: 12px; margin-bottom: 1.25rem; max-width: 100%; }
   .pillars-grid { gap: 0.75rem; margin: 1.25rem 0; }
   .pillar-card { padding: 0.875rem; }
   .pillar-icon { width: 28px; height: 28px; font-size: 12px; }
-  .pillar-card h3 { font-size: 11px; }
-  .pillar-card p { font-size: 10px; line-height: 1.45; }
+  .pillar-card h3 { font-size: 12px; }
+  .pillar-card p { font-size: 11px; line-height: 1.45; }
   .highlight-strip { padding: 0.875rem; margin: 1rem 0; font-size: 11px; line-height: 1.5; }
+  .hero { align-items: center; }
+  .hero-content { margin: 0 auto; text-align: center; }
+  /* show a subtle decorative visual on small screens */
+  .hero-visual { display: block; position: absolute; right: 8px; bottom: 8px; max-width: 120px; opacity: 0.06; z-index: 1; pointer-events: none; }
+  .hero p { max-width: 100%; margin-left: auto; margin-right: auto; }
 }
 
 @media (max-width: 360px) {
   .hero { padding: 1rem 0.375rem; min-height: 280px; }
   .hero h1 { font-size: 20px; margin-bottom: 0.25rem; }
-  .hero p { font-size: 10px; margin-bottom: 0.5rem; }
-  .hero-eyebrow { font-size: 7px; padding: 2px 5px; }
+  .hero p { font-size: 11px; margin-bottom: 0.5rem; }
+  .hero-eyebrow { font-size: 10px; padding: 2px 5px; }
   .btn-primary, .btn-outline { padding: 8px 12px; font-size: 11px; }
   .page-content { padding: 1rem 0.375rem; }
   .section-title { font-size: 16px; }
-  .section-lead { font-size: 10px; }
+  .section-lead { font-size: 11px; }
   .pillars-grid { gap: 0.5rem; }
   .pillar-card { padding: 0.75rem; }
-  .pillar-card h3 { font-size: 10px; }
-  .pillar-card p { font-size: 9px; }
+  .pillar-card h3 { font-size: 11px; }
+  .pillar-card p { font-size: 10px; }
   .stat-number { font-size: 14px; }
-  .stat-label { font-size: 7px; }
+  .stat-label { font-size: 10px; }
+  .hero-visual { max-width: 96px; opacity: 0.05; }
 }
