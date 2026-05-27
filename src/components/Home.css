@@ -128,6 +128,13 @@
 
 .page-content { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
 
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
 .section-eyebrow { font-size: 12px; font-weight: 500; color: var(--gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
 
 .section-title { font-family: var(--ff-display); font-size: 28px; font-weight: 700; color: var(--navy); margin-bottom: 1rem; line-height: 1.2; }
@@ -198,6 +205,12 @@
 @media (max-width: 680px) {
   .hero { padding: 1.5rem 0.75rem; min-height: 320px; }
   .hero-bg { opacity: 0.02; }
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
   .hero-eyebrow { font-size: 10px; padding: 3px 8px; margin-bottom: 0.75rem; gap: 6px; }
   .hero h1 { font-size: 28px; line-height: 1.08; margin-bottom: 0.5rem; }
   .hero p { font-size: 12px; margin-bottom: 0.875rem; }

@@ -144,7 +144,7 @@ nav {
   .nav-brand { gap: 8px; }
   .nav-logo { width: 32px; height: 32px; font-size: 12px; }
   .nav-title { font-size: 12px; }
-  .nav-title span { font-size: 10px; }
+  .nav-title span { font-size: 9px; }
   .nav-links a { font-size: 11px; padding: 6px 9px; }
 }
 
@@ -166,8 +166,8 @@ nav {
 
   .nav-title span {
     display: block;
-    font-size: 10px;
-    font-weight: 400;
+    font-size: 9px;
+    font-weight: 300;
     opacity: 0.95;
     white-space: nowrap;
     overflow: hidden;

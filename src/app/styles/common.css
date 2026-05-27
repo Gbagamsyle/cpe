@@ -49,12 +49,13 @@
   .accred-row { gap: 0.625rem; margin-top: 1rem; }
   .accred-chip { padding: 5px 8px; font-size: 10px; border-radius: 4px; }
   .download-list { gap: 0.625rem; margin-top: 1.25rem; }
-  .download-item { padding: 0.75rem; flex-direction: column; gap: 0.75rem; }
-  .download-item .doc-info { flex-direction: column; gap: 8px; }
+  .download-item { padding: 0.75rem; flex-direction: column; gap: 0.75rem; align-items: center; }
+  .download-item .doc-info { flex-direction: column; gap: 8px; width: 100%; align-items: center; }
+  .download-item .doc-info > div { text-align: center; width: 100%; }
   .doc-icon { width: 28px; height: 28px; font-size: 13px; }
   .doc-name { font-size: 12px; }
   .doc-size { font-size: 10px; }
-  .download-btn { padding: 5px 12px; font-size: 11px; }
+  .download-btn { padding: 5px 12px; font-size: 11px; width: 100%; justify-content: center; }
 }
 
 @media (max-width: 520px) {
@@ -65,10 +66,12 @@
   .accred-row { gap: 0.5rem; flex-direction: column; margin-top: 0.75rem; }
   .accred-chip { padding: 5px 8px; font-size: 10px; width: 100%; text-align: center; }
   .download-list { gap: 0.5rem; margin-top: 1rem; }
-  .download-item { padding: 0.625rem; }
+  .download-item { padding: 0.625rem; flex-direction: column; gap: 0.75rem; align-items: center; }
+  .download-item .doc-info { flex-direction: column; gap: 8px; width: 100%; align-items: center; }
+  .download-item .doc-info > div { text-align: center; width: 100%; }
   .doc-icon { width: 24px; height: 24px; font-size: 10px; }
   .doc-name { font-size: 11px; }
-  .download-btn { padding: 4px 10px; font-size: 10px; }
+  .download-btn { padding: 6px 12px; font-size: 11px; width: 100%; justify-content: center; }
 }
 
 @media (max-width: 360px) {
@@ -76,6 +79,9 @@
   .page-header h1 { font-size: 16px; }
   .page-header p { font-size: 10px; }
   .accred-chip { padding: 4px 6px; font-size: 10px; }
-  .download-item { padding: 0.5rem; }
+  .download-item { padding: 0.5rem; flex-direction: column; gap: 0.75rem; align-items: center; }
+  .download-item .doc-info { flex-direction: column; gap: 8px; width: 100%; align-items: center; }
+  .download-item .doc-info > div { text-align: center; width: 100%; }
   .doc-icon { width: 20px; height: 20px; font-size: 10px; }
+  .download-btn { width: 100%; padding: 6px 12px; font-size: 11px; justify-content: center; }
 }

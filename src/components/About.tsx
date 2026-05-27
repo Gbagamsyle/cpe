@@ -24,7 +24,7 @@ export default function About({ isActive }: { isActive?: boolean }) {
 
         <div className="divider" />
 
-        <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem'}}>
+        <div className="mission-vision-grid">
           <div>
             <div className="section-eyebrow">Mission</div>
             <p style={{fontSize: '14px', color: 'var(--text-dark)', lineHeight: 1.7}}>To provide a rigorous, research-informed education in computer engineering that produces graduates who are technically excellent, ethically grounded, and entrepreneurially empowered to contribute to Nigeria&apos;s technological advancement.</p>
