@@ -1,6 +1,5 @@
 import React from "react";
-import "./Programs.css";
-import "./Home.css";
+// styles are provided by global/common CSS and modules where applicable
 import { FaFileAlt, FaDownload } from 'react-icons/fa';
 
 // Replace the placeholder links below with your Google Drive share links for each level.
