@@ -1,0 +1,12 @@
+.facultyGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
+.facultyCard { background: var(--white); border: 1px solid rgba(0,0,0,0.07); border-radius: 10px; overflow: hidden; text-align: center; }
+.facultyAvatar { width: 60px; height: 60px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; font-family: var(--ff-display); font-size: 20px; font-weight: 700; color: var(--gold-light); margin: 1.25rem auto 0.75rem; }
+.facultyCard h3 { font-size: 14px; font-weight: 500; color: var(--navy); padding: 0 1rem; margin-bottom: 3px; }
+.facultyTitle { font-size: 12px; color: var(--gold); padding: 0 1rem; font-weight: 400; margin-bottom: 0.5rem; }
+.facultyArea { font-size: 12px; color: var(--text-muted); padding: 0 1rem 1rem; line-height: 1.5; font-weight: 300; }
+.facultyContact { border-top: 1px solid rgba(0,0,0,0.06); padding: 0.75rem; font-size: 12px; color: var(--text-muted); display: flex; justify-content: center; gap: 8px; }
+
+@media (max-width: 1200px) { .facultyGrid { gap: 1rem; } }
+@media (max-width: 900px) { .facultyGrid { grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.5rem; } }
+@media (max-width: 680px) { .facultyGrid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .facultyGrid { gap: 0.75rem; margin-top: 1rem; } .facultyAvatar { width: 44px; height: 44px; font-size: 15px; } }

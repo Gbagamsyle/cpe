@@ -1,0 +1,7 @@
+.root { background: var(--navy); padding: 2rem; text-align: center; border-top: 2px solid var(--gold); }
+.root p { color: rgba(255,255,255,0.35); font-size: 12px; font-weight: 300; }
+.root strong { color: var(--gold-light); font-weight: 500; }
+
+@media (max-width: 900px) { .root { padding: 1.5rem; } .root p { font-size: 11px; } }
+@media (max-width: 680px) { .root { padding: 1rem; } .root p { font-size: 11px; } }
+@media (max-width: 520px) { .root { padding: 0.75rem; } .root p { font-size: 10px; } }
