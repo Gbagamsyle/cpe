@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import styles from "./Nav.module.css";
+import "./Nav.css";
 
 const links = [
   ["home", "Home"],
@@ -23,19 +23,19 @@ export default function Nav({ active, onNavigate }: { active: string; onNavigate
   };
 
   return (
-    <nav className={styles.root}>
-      <div className={styles.brand}>
-        <div className={styles.logo}>
-          <Image src="/logo.jpg" alt="CPE logo" className={styles.logoImg} width={36} height={36} />
+    <nav>
+      <div className="nav-brand">
+        <div className="nav-logo">
+          <Image src="/logo.jpg" alt="CPE logo" className="nav-logo-img" width={36} height={36} />
         </div>
-        <div className={styles.title}>
+        <div className="nav-title">
           Dept. of Computer Engineering
           <span>Federal University of Technology, Minna</span>
         </div>
       </div>
 
       <button
-        className={`${styles.toggle} ${menuOpen ? styles.open : ""}`}
+        className={`nav-toggle ${menuOpen ? "open" : ""}`}
         aria-expanded={menuOpen}
         aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
         onClick={() => setMenuOpen((prev) => !prev)}
@@ -43,12 +43,12 @@ export default function Nav({ active, onNavigate }: { active: string; onNavigate
         <span />
       </button>
 
-      <ul className={`${styles.links} ${menuOpen ? styles.open : ""}`}>
+      <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         {links.map(([id, label]) => (
           <li key={id}>
             <a
               href="#"
-              className={`${styles.link} ${active === id ? styles.active : ""}`}
+              className={active === id ? "active" : ""}
               onClick={(e) => {
                 e.preventDefault();
                 handleNavigate(id);

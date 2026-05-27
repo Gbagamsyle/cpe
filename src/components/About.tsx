@@ -1,5 +1,5 @@
 import React from "react";
-import homeStyles from "./Home.module.css";
+import "./Home.css";
 import { GiMicroscope, GiScales } from 'react-icons/gi';
 import { FaGlobe } from 'react-icons/fa';
 
@@ -24,7 +24,7 @@ export default function About({ isActive }: { isActive?: boolean }) {
 
         <div className="divider" />
 
-        <div className={homeStyles.missionVisionGrid}>
+        <div className="mission-vision-grid">
           <div>
             <div className="section-eyebrow">Mission</div>
             <p style={{fontSize: '14px', color: 'var(--text-dark)', lineHeight: 1.7}}>To provide a rigorous, research-informed education in computer engineering that produces graduates who are technically excellent, ethically grounded, and entrepreneurially empowered to contribute to Nigeria&apos;s technological advancement.</p>
@@ -47,19 +47,19 @@ export default function About({ isActive }: { isActive?: boolean }) {
 
         <div className="divider" />
         <div className="section-eyebrow">Core Values</div>
-        <div className={homeStyles.pillarsGrid} style={{marginTop: '1rem'}}>
-          <div className={homeStyles.pillarCard}>
-            <div className={homeStyles.pillarIcon}><GiMicroscope aria-hidden="true" /></div>
+        <div className="pillars-grid" style={{marginTop: '1rem'}}>
+          <div className="pillar-card">
+            <div className="pillar-icon"><GiMicroscope aria-hidden="true" /></div>
             <h3>Innovation</h3>
             <p>Encouraging creative thinking and novel solutions to engineering challenges.</p>
           </div>
           <div className="pillar-card">
-            <div className={homeStyles.pillarIcon}><GiScales aria-hidden="true" /></div>
+            <div className="pillar-icon"><GiScales aria-hidden="true" /></div>
             <h3>Integrity</h3>
             <p>Upholding the highest standards of academic and professional ethics.</p>
           </div>
           <div className="pillar-card">
-            <div className={homeStyles.pillarIcon}><FaGlobe aria-hidden="true" /></div>
+            <div className="pillar-icon"><FaGlobe aria-hidden="true" /></div>
             <h3>Impact</h3>
             <p>Directing research and practice toward solving real societal problems.</p>
           </div>

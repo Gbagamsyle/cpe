@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./Faculty.module.css";
+import "./Faculty.css";
+import "./Home.css";
 import { FaEnvelope } from 'react-icons/fa';
 
 export default function Faculty({ isActive }: { isActive?: boolean }) {
@@ -17,95 +18,95 @@ export default function Faculty({ isActive }: { isActive?: boolean }) {
         <div className="section-title">Meet our faculty</div>
         <p className="section-lead">Our team brings together expertise spanning embedded systems, artificial intelligence, networking, cybersecurity, signal processing, and software engineering.</p>
 
-        <div className={styles.facultyGrid}>
-          <div className={styles.facultyCard}>
-            <div className={styles.facultyAvatar}>ED</div>
+        <div className="faculty-grid">
+          <div className="faculty-card">
+            <div className="faculty-avatar">ED</div>
             <h3>Prof. Eustace M. Dogo</h3>
-            <div className={styles.facultyTitle}>Head of Department · Professor</div>
-            <div className={styles.facultyArea}>Artificial Intelligence, Machine Learning, Computer Vision</div>
-            <div className={styles.facultyContact}>
+            <div className="faculty-title">Head of Department · Professor</div>
+            <div className="faculty-area">Artificial Intelligence, Machine Learning, Computer Vision</div>
+            <div className="faculty-contact">
               <FaEnvelope style={{fontSize: '14px'}} aria-hidden="true" />
               <span>eustace.dogo@futminna.edu.ng</span>
             </div>
           </div>
-          <div className={styles.facultyCard}>
-            <div className={styles.facultyAvatar}>JA</div>
+          <div className="faculty-card">
+            <div className="faculty-avatar">JA</div>
             <h3>Dr. J. Agajo</h3>
-            <div className={styles.facultyTitle}>Professor</div>
-            <div className={styles.facultyArea}>Digital Signal Processing, Image Processing, Pattern Recognition</div>
-            <div className={styles.facultyContact}>
+            <div className="faculty-title">Professor</div>
+            <div className="faculty-area">Digital Signal Processing, Image Processing, Pattern Recognition</div>
+            <div className="faculty-contact">
               <FaEnvelope style={{fontSize: '14px'}} aria-hidden="true" />
               <span>james.agajo@futminna.edu.ng</span>
             </div>
           </div>
-          <div className={styles.facultyCard}>
-            <div className={styles.facultyAvatar}>IA</div>
+           <div className="faculty-card">
+            <div className="faculty-avatar">IA</div>
             <h3>Engr.Dr. I.M Abdullahi</h3>
-            <div className={styles.facultyTitle}>Senior Lecturer</div>
-            <div className={styles.facultyArea}>Database Systems, Software Engineering, Cloud Computing</div>
-            <div className={styles.facultyContact}>
+            <div className="faculty-title">Senior Lecturer</div>
+            <div className="faculty-area">Database Systems, Software Engineering, Cloud Computing</div>
+            <div className="faculty-contact">
               <FaEnvelope style={{fontSize: '14px'}} aria-hidden="true" />
               <span>ibrahim.abdullahi@futminna.edu.ng</span>
             </div>
           </div>
-          <div className={styles.facultyCard}>
-            <div className={styles.facultyAvatar}>BU</div>
+          <div className="faculty-card">
+            <div className="faculty-avatar">BU</div>
             <h3>Engr. B.U. Umar</h3>
-            <div className={styles.facultyTitle}>Senior Lecturer</div>
-            <div className={styles.facultyArea}>Digital Signal Processing, Wireless Communications, OFDM</div>
-            <div className={styles.facultyContact}>
+            <div className="faculty-title">Senior Lecturer</div>
+            <div className="faculty-area">Digital Signal Processing, Wireless Communications, OFDM</div>
+            <div className="faculty-contact">
               <FaEnvelope style={{fontSize: '14px'}} aria-hidden="true" />
               <span>buhari.umar@futminna.edu.ng</span>
             </div>
           </div>
          
-          <div className={styles.facultyCard}>
-            <div className={styles.facultyAvatar}>RI</div>
+          <div className="faculty-card">
+            <div className="faculty-avatar">RI</div>
             <h3>Dr. I. Rabiu</h3>
-            <div className={styles.facultyTitle}>Lecturer II</div>
-            <div className={styles.facultyArea}>Cybersecurity, Network Architecture, Cyber Law & Policy</div>
-            <div className={styles.facultyContact}>
+            <div className="faculty-title">Lecturer II</div>
+            <div className="faculty-area">Cybersecurity, Network Architecture, Cyber Law & Policy</div>
+            <div className="faculty-contact">
               <FaEnvelope style={{fontSize: '14px'}} aria-hidden="true" />
               <span>isah.rabiu@futminna.edu.ng</span>
             </div>
           </div>
          
-           <div className={styles.facultyCard}>
-            <div className={styles.facultyAvatar}>DM</div>
+           <div className="faculty-card">
+            <div className="faculty-avatar">DM</div>
             <h3>Engr.Dr. D. Maliki</h3>
-            <div className={styles.facultyTitle}>Senior Lecturer</div>
-            <div className={styles.facultyArea}>Database Systems, Software Engineering, Cloud Computing</div>
-            <div className={styles.facultyContact}>
+            <div className="faculty-title">Senior Lecturer</div>
+            <div className="faculty-area">Database Systems, Software Engineering, Cloud Computing</div>
+            <div className="faculty-contact">
               <FaEnvelope style={{fontSize: '14px'}} aria-hidden="true" />
               <span>d.maliki@futminna.edu.ng</span>
             </div>
           </div>
-           <div className={styles.facultyCard}>
-            <div className={styles.facultyAvatar}>ID</div>
+           <div className="faculty-card">
+            <div className="faculty-avatar">ID</div>
             <h3>Engr. I.A Dauda</h3>
-            <div className={styles.facultyTitle}>Lecturer II</div>
-            <div className={styles.facultyArea}>Digital Logic Design, FPGA Programming, VLSI Design</div>
-            <div className={styles.facultyContact}>
+            <div className="faculty-title">Lecturer II</div>
+            <div className="faculty-area">Digital Logic Design, FPGA Programming, VLSI Design</div>
+            <div className="faculty-contact">
               <FaEnvelope style={{fontSize: '14px'}} aria-hidden="true" />
               <span>ibrahim.dauda@futminna.edu.ng</span>
             </div>
           </div>
-           <div className={styles.facultyCard}>
-            <div className={styles.facultyAvatar}>BN</div>
+           <div className="faculty-card">
+            <div className="faculty-avatar">BN</div>
             <h3>Dr. B.K. Nuhu</h3>
-            <div className={styles.facultyTitle}>Lecturer II</div>
-            <div className={styles.facultyArea}>Database Systems, Software Engineering, Cloud Computing</div>
-            <div className={styles.facultyContact}>
+            <div className="faculty-title">Lecturer II</div>
+            <div className="faculty-area">Database Systems, Software Engineering, Cloud Computing</div>
+            <div className="faculty-contact">
               <FaEnvelope style={{fontSize: '14px'}} aria-hidden="true" />
               <span>b.nuhu@futminna.edu.ng</span>
             </div>
           </div>
-          <div className={styles.facultyCard}>
-            <div className={styles.facultyAvatar}>MA</div>
+          <div className="faculty-card">
+            <div className="faculty-avatar">MA</div>
             <h3>Engr. M.A. Akogbe</h3>
-            <div className={styles.facultyTitle}>Lecturer II</div>
-            <div className={styles.facultyArea}>Database Systems, Software Engineering, Cloud Computing</div>
-            <div className={styles.facultyContact}>
+            <div className="faculty-title">Lecturer II</div>
+            <div className="faculty-area">Database Systems, Software Engineering, Cloud Computing</div>
+            <div className="faculty-contact">
               <FaEnvelope style={{fontSize: '14px'}} aria-hidden="true" />
               <span>mike.akogbe@futminna.edu.ng</span>
             </div>
